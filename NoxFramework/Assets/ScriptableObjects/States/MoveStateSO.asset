@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff1726f7db0e4a74bb7d3704c6ab3b9b, type: 3}
-  m_Name: TesteSO
+  m_Name: MoveStateSO
   m_EditorClassIdentifier: 

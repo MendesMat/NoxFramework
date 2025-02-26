@@ -6,9 +6,27 @@
             "id": "7c18b98c-1f08-4d5f-9ff5-71955757b7c3",
             "actions": [
                 {
-                    "name": "TestInput",
+                    "name": "Move",
                     "type": "Button",
-                    "id": "05d990f7-cf3e-44fb-861a-d64f90f56d12",
+                    "id": "a51c7b13-26e7-4196-9f49-668c7be52708",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "98b555a1-6fd6-41e3-bf11-385b0b87ffe8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "7c626596-9b8a-429a-8942-c0687f95c502",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -18,12 +36,34 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "0e61182c-4a7a-4cd0-bbd7-d80845d1e7a4",
+                    "id": "b89c99f1-066b-454a-973b-34803af0c58c",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5cf8dd20-0792-4c94-af5d-b3a64efd1527",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "TestInput",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "525ea13d-a7b2-4c55-ad39-1b66a1c75a29",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

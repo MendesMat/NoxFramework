@@ -386,9 +386,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652c9148d8d14f3da612793ff963bd0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  states:
-  - {fileID: 11400000, guid: 7598e023ded76834381e9f1f4094d263, type: 2}
-  - {fileID: 11400000, guid: 49412a0214f5da74fb5a9a2993d905a2, type: 2}
 --- !u!114 &1221722465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,8 +414,8 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1221722466}
-        m_TargetAssemblyTypeName: NoxStudios.Player.TestInput, Assembly-CSharp
-        m_MethodName: OnTestInput
+        m_TargetAssemblyTypeName: Player.InputHandler, NoxStudios.Player
+        m_MethodName: OnMoveInput
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -428,8 +425,40 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 05d990f7-cf3e-44fb-861a-d64f90f56d12
-    m_ActionName: 'Player/TestInput[/Keyboard/space]'
+    m_ActionId: a51c7b13-26e7-4196-9f49-668c7be52708
+    m_ActionName: Player/Move
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1221722466}
+        m_TargetAssemblyTypeName: Player.InputHandler, NoxStudios.Player
+        m_MethodName: OnJumpInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 98b555a1-6fd6-41e3-bf11-385b0b87ffe8
+    m_ActionName: Player/Jump
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1221722466}
+        m_TargetAssemblyTypeName: Player.InputHandler, NoxStudios.Player
+        m_MethodName: OnAttackInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7c626596-9b8a-429a-8942-c0687f95c502
+    m_ActionName: Player/Attack
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -447,6 +476,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dafd8ac25e9938b42a0223bc71161afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInput: {fileID: 1221722465}
+  stateMachine: {fileID: 1221722463}
+  states:
+  - {fileID: 11400000, guid: aaa03c8b3ee3cb84baa6342bbdc1057c, type: 2}
+  - {fileID: 11400000, guid: 034259bf2a2344a4c91538929fb1fadd, type: 2}
+  - {fileID: 11400000, guid: ad9e6d06951d22443b96bc6211a41408, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
