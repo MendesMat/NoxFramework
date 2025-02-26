@@ -5,19 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98dbe901-d1fd-499f-9a77-11e6733b9b71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/EventBus/IEventBinding.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/EventBus/IEventBinding.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/PlayerManager/PlayerManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/PlayerManager/PlayerManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/StateMachine/BaseState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/StateMachine/BaseState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/StateMachine/StateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/StateMachine/StateMachine.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/StateScriptableObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/StateScriptableObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/EventBus/Events.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/EventBus/Events/SwitchStateEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/EventBus/Events/SwitchStateEvent.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NoxFramework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NoxFramework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NoxStudios/Core/EventBus/EventBinding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/EventBus/EventBinding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NoxStudios/Core/EventBus/NoxStudios.Core.EventBus.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NoxStudios/Core/EventBus/NoxStudios.Core.EventBus.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NoxStudios/Core/PlayerManager.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NoxStudios/Core/PlayerManager/NoxStudios.Core.PlayerManager.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NoxStudios/Core/PlayerManager/NoxStudios.Core.PlayerManager.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NoxStudios/Core/PlayerManager/PlayerManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NoxStudios/Core/PlayerManager/PlayerManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/OtherStateSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/OtherStateSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ScriptableObjects.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ScriptableObjects.asmdef" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +43,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/StateScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/TestInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/TestStateSO.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -135,7 +139,7 @@
       <workItem from="1740304095715" duration="270000" />
       <workItem from="1740304390054" duration="1017000" />
       <workItem from="1740462959415" duration="10560000" />
-      <workItem from="1740474084141" duration="2437000" />
+      <workItem from="1740474084141" duration="8265000" />
     </task>
     <servers />
   </component>

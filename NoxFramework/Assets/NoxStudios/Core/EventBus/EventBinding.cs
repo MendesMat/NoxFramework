@@ -9,7 +9,7 @@ namespace NoxStudios.Core.EventBus
     /// <typeparam name="T">O tipo de evento que será tratado.</typeparam>
     public class EventBinding<T> : IEventBinding<T> where T : IEvent
     {
-        // Inicialização das variável '_onEvent' com uma ação vazia que recebe um argumento do tipo 'T'.
+        // Inicialização das variáveis '_onEvent' com uma ação vazia que recebe um argumento do tipo 'T'.
         // Isso é feito para garantir que a variável nunca seja 'null'. A ação vazia ( _ => { } )
         // não faz nada, mas garante que sempre exista uma implementação válida na variável,
         // evitando a necessidade de fazer verificações de 'null' antes de chamar a ação.
@@ -28,7 +28,7 @@ namespace NoxStudios.Core.EventBus
         Action<T> IEventBinding<T>.OnEvent 
         { 
             get => _onEvent; 
-            set => _onEvent = value; 
+            set => _onEvent = value;
         }
 
         /// <inheritdoc />
