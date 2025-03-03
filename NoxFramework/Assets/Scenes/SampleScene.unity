@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 1221722465}
   - component: {fileID: 1221722463}
   - component: {fileID: 1221722466}
+  - component: {fileID: 1221722467}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -413,9 +414,9 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1221722466}
-        m_TargetAssemblyTypeName: Player.InputHandler, NoxStudios.Player
-        m_MethodName: OnMoveInput
+      - m_Target: {fileID: 1221722467}
+        m_TargetAssemblyTypeName: NoxStudios.Player.PlayerInput, Assembly-CSharp
+        m_MethodName: OnMove
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -429,9 +430,9 @@ MonoBehaviour:
     m_ActionName: Player/Move
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1221722466}
-        m_TargetAssemblyTypeName: Player.InputHandler, NoxStudios.Player
-        m_MethodName: OnJumpInput
+      - m_Target: {fileID: 1221722467}
+        m_TargetAssemblyTypeName: NoxStudios.Player.PlayerInput, Assembly-CSharp
+        m_MethodName: OnJump
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -445,9 +446,9 @@ MonoBehaviour:
     m_ActionName: Player/Jump
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1221722466}
-        m_TargetAssemblyTypeName: Player.InputHandler, NoxStudios.Player
-        m_MethodName: OnAttackInput
+      - m_Target: {fileID: 1221722467}
+        m_TargetAssemblyTypeName: NoxStudios.Player.PlayerInput, Assembly-CSharp
+        m_MethodName: OnAttack
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -476,12 +477,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dafd8ac25e9938b42a0223bc71161afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInput: {fileID: 1221722465}
   stateMachine: {fileID: 1221722463}
   states:
+  - {fileID: 11400000, guid: 82d0ca99e337f7c478f083fbf0a0f60f, type: 2}
   - {fileID: 11400000, guid: aaa03c8b3ee3cb84baa6342bbdc1057c, type: 2}
   - {fileID: 11400000, guid: 034259bf2a2344a4c91538929fb1fadd, type: 2}
   - {fileID: 11400000, guid: ad9e6d06951d22443b96bc6211a41408, type: 2}
+--- !u!114 &1221722467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221722459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c711fa0efbb447e8dc6cfde1e1668c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

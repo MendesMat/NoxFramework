@@ -11,14 +11,12 @@ namespace NoxStudios.Core.StateMachine
 
         public void SetState(BaseState newState, bool reset = false)
         {
-            if(newState == null) return;
+            if(newState == null || 
+               (_currentState == newState && !reset)) return;
             
-            if(_currentState != newState || reset)
-            {
-                _currentState?.ExitState();
-                _currentState = newState;
-                newState.EnterState();
-            }
+            _currentState?.ExitState();
+            _currentState = newState;
+            newState.EnterState();
         }
     }
 }

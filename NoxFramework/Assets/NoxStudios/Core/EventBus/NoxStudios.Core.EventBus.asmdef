@@ -1,7 +1,10 @@
 {
     "name": "NoxStudios.Core.EventBus",
     "rootNamespace": "",
-    "references": ["GUID:86b7bb43f769d364aa41a2f2259e08f3"],
+    "references": [
+        "GUID:86b7bb43f769d364aa41a2f2259e08f3",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
