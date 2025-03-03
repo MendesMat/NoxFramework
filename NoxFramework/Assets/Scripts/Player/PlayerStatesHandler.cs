@@ -18,18 +18,15 @@ namespace NoxStudios.Player
 
         private void Awake()
         {
+            _inputEventBinding = new EventBinding<PlayerInputEvent>(HandleInput);
+            
             _inputToState["Idle"] = GetType<IdleStateSO>();
             _inputToState["Move"] = GetType<MoveStateSO>();
             _inputToState["Jump"] = GetType<JumpStateSO>();
             _inputToState["Attack"] = GetType<AttackStateSO>();
         }
 
-        private void OnEnable()
-        {
-            _inputEventBinding.Add(HandleInput);
-            
-            EventBus<PlayerInputEvent>.Register(_inputEventBinding);
-        }
+        private void OnEnable() => EventBus<PlayerInputEvent>.Register(_inputEventBinding);
 
         private void OnDisable() => EventBus<PlayerInputEvent>.Unregister(_inputEventBinding);
 
@@ -46,9 +43,7 @@ namespace NoxStudios.Player
 
         private void HandleInput(PlayerInputEvent @event)
         {
-            var inputActionName = @event.Context.action.name;
-
-            if (@event.IsReleased || !_inputToState.TryGetValue(inputActionName, out var newState))
+            if (@event.IsInputReleased || !_inputToState.TryGetValue(@event.Context.action.name, out var newState))
             {
                 stateMachine.SetState(_inputToState["Idle"]);
                 return;

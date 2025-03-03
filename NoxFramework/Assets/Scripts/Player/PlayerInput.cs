@@ -18,6 +18,6 @@ namespace NoxStudios.Player
         }
 
         private static void PublishInputReleased()
-            => EventBus<PlayerInputEvent>.Publish(new PlayerInputEvent(default));
+            => EventBus<PlayerInputEvent>.Publish(new PlayerInputEvent(true));
     }
 }
