@@ -20,6 +20,7 @@ namespace NoxStudios.Player
         {
             _inputEventBinding = new EventBinding<PlayerInputEvent>(HandleInput);
             
+            // O string deve conter o exato nome do InputAction, exceto Idle.
             _inputToState["Idle"] = GetType<IdleStateSO>();
             _inputToState["Move"] = GetType<MoveStateSO>();
             _inputToState["Jump"] = GetType<JumpStateSO>();
@@ -27,7 +28,6 @@ namespace NoxStudios.Player
         }
 
         private void OnEnable() => EventBus<PlayerInputEvent>.Register(_inputEventBinding);
-
         private void OnDisable() => EventBus<PlayerInputEvent>.Unregister(_inputEventBinding);
 
         private T GetType<T>() where T : BaseState
